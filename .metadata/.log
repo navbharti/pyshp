@@ -1,0 +1,66 @@
+!SESSION 2014-09-18 16:23:25.800 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.vectrace.MercurialEclipse 4 0 2014-09-18 16:24:47.931
+!MESSAGE . Command line: hg -y debuginstall, error code: -1
+!STACK 1
+. Command line: hg -y debuginstall, error code: -1
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgDebugInstallClient.debugInstall(HgDebugInstallClient.java:30)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin.checkHgInstallation(MercurialEclipsePlugin.java:217)
+	at com.vectrace.MercurialEclipse.MercurialEclipsePlugin$1.run(MercurialEclipsePlugin.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 -1 2014-09-18 16:24:48.136
+!MESSAGE . Command line: hg -y debuginstall
+
+!ENTRY com.vectrace.MercurialEclipse 4 0 2014-09-18 16:24:50.592
+!MESSAGE . Command line: hg -y showconfig ui.username, error code: -1
+!STACK 1
+. Command line: hg -y showconfig ui.username, error code: -1
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:441)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToString(AbstractShellCommand.java:437)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLines(HgConfigClient.java:30)
+	at com.vectrace.MercurialEclipse.commands.HgConfigClient.getHgConfigLine(HgConfigClient.java:22)
+	at com.vectrace.MercurialEclipse.team.MercurialUtilities.getDefaultUserName(MercurialUtilities.java:281)
+	at com.vectrace.MercurialEclipse.preferences.PreferenceInitializer$1.run(PreferenceInitializer.java:136)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 -1 2014-09-18 16:24:50.592
+!MESSAGE . Command line: hg -y showconfig ui.username
+
+!ENTRY org.eclipse.mylyn.tasks.core 1 0 2014-09-18 16:24:51.662
+!MESSAGE Migrating task repository credentials from keyring.
+
+!ENTRY com.tasktop.monitor 4 0 2014-09-18 16:24:57.374
+!MESSAGE Unable to start Tasktop monitor on port 57028. This instance of Tasktop may not operate with all extensions (e.g. Firefox).
+!STACK 0
+java.lang.Exception
+	at com.tasktop.monitor.LaunchMonitorJob.writeInfoFile(LaunchMonitorJob.java:134)
+	at com.tasktop.monitor.LaunchMonitorJob.run(LaunchMonitorJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tasktop.client.auth 2 0 2014-09-18 16:24:59.322
+!MESSAGE Reading license failed.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2014-09-18 16:24:59.322
+!MESSAGE Could not find or access license at C:\Users\rajni\AppData\Roaming\Tasktop.
+!SUBENTRY 1 com.tasktop.client.auth 2 0 2014-09-18 16:24:59.322
+!MESSAGE Could not find or access license anywhere.
+
+!ENTRY com.tasktop.client.auth 2 0 2014-09-18 16:25:07.750
+!MESSAGE Unable to launch Windows timing monitor.
+!STACK 0
+java.lang.Exception
+	at com.tasktop.microsoft.windows.ui.WindowsStartupUiJob$CheckMonitorStartupJob.run(WindowsStartupUiJob.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
